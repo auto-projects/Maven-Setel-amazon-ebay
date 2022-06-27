@@ -1,0 +1,32 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="Maven-Setel-amazon-ebay"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="Maven-Setel-amazon-ebay-resources" name="Maven-Setel-amazon-ebay Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="Maven-Setel-amazon-ebay.css" location="/css/Maven-Setel-amazon-ebay.css"/>
+        <resource type="download" name="Maven-Setel-amazon-ebay.js" location="/js/Maven-Setel-amazon-ebay.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>Maven-Setel-amazon-ebay</context>
+    </web-resource>
+    
+    <!-- publish our component -->
+    <component key="myPluginComponent" class="org.example.MyPluginComponentImpl" public="true">
+        <interface>org.example.MyPluginComponent</interface>
+    </component>
+    
+    <!-- import from the product container -->
+    <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
+    
+</atlassian-plugin>

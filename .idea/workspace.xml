@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.3873874" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e09f64a-273e-4ce1-a7fb-3bc1c9d5182f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/GlobalConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/MethodListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/PageGeneratorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/TestNGAppender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/VerificationFailures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AmazonHomePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/EbayHomePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageUIs/AmazonHomePageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageUIs/BasePageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageUIs/EbayHomePageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfig/ExtentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfig/ExtentTestListenerV5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfig/ExtentTestManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reportConfig/ReportNGListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Maven-Setel-amazon-ebay.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/atlassian-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/Maven-Setel-amazon-ebay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pluginIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/pluginLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/js/Maven-Setel-amazon-ebay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/amazon/ebay/Amazon_Ebay_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/atlassian-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/runSETELTestcases.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2B9QKkmnw7vvMrxbefQCjOqDntD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/FULLSTACK SELENIUM JAVA/My workspace/BankGuru99-Maven-Cucumber-BDD&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FULLSTACK SELENIUM JAVA\My workspace\Maven-Setel-amazon-ebay\src\test\resources" />
+      <recent name="D:\FULLSTACK SELENIUM JAVA\My workspace\Maven-Setel-amazon-ebay\src\main\java\pageUIs" />
+      <recent name="D:\FULLSTACK SELENIUM JAVA\My workspace\Maven-Setel-amazon-ebay\src\main\java\reportConfig" />
+      <recent name="D:\FULLSTACK SELENIUM JAVA\My workspace\Maven-Setel-amazon-ebay\src\main\java\commons" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/FULLSTACK SELENIUM JAVA/My workspace/Maven-Setel-amazon-ebay/src/test/resources/runSETELTestcases.xml">
+    <configuration name="Amazon_Ebay_Test.Testcase_01_Open_Amazon_and_Search" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Maven-Setel-amazon-ebay" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="amazon.ebay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="amazon.ebay" />
+      <option name="MAIN_CLASS_NAME" value="amazon.ebay.Amazon_Ebay_Test" />
+      <option name="METHOD_NAME" value="Testcase_01_Open_Amazon_and_Search" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/FULLSTACK SELENIUM JAVA/My workspace/Maven-Setel-amazon-ebay/src/test/resources/runSETELTestcases.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Maven-Setel-amazon-ebay" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runSETELTestcases.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/FULLSTACK SELENIUM JAVA/My workspace/Maven-Setel-amazon-ebay/src/test/resources/runSETELTestcases.xml" />
+        <item itemvalue="TestNG.Amazon_Ebay_Test.Testcase_01_Open_Amazon_and_Search" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e09f64a-273e-4ce1-a7fb-3bc1c9d5182f" name="Changes" comment="" />
+      <created>1656315760304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656315760304</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/BaseTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
