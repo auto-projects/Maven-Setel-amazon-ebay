@@ -48,7 +48,7 @@ public class Amazon_Ebay_Test extends BaseTest {
         amazonHomePage.clickOnButtonByID(driver, "nav-search-submit-button");
 
         ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 04: Verify that 'RESULTS' page is displayed");
-        System.out.println("☀ AMAZON RESULT PAGE:" + amazonHomePage.getHeaderTextsOfResultPage());
+        amazonHomePage.getHeaderTextsOfResultPage();
 
         ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 05: Get and Print out all names of unsorted results");
         System.out.println("►►►►►►BEFORE SORTING◄◄◄◄◄◄");
@@ -65,7 +65,7 @@ public class Amazon_Ebay_Test extends BaseTest {
 
     }
 
-    //@Test
+    @Test
     public void Testcase_02_Open_Ebay_and_Search(Method method) {
         ExtentTestManager.startTest(method.getName(), "OPEN EBAY AND SEARCH");
 
@@ -80,19 +80,18 @@ public class Amazon_Ebay_Test extends BaseTest {
         amazonHomePage.clickOnButtonByID(driver, "gh-btn");
 
         ExtentTestManager.getTest().log(Status.INFO, "Ebay_02 - Step 04: Verify that 'RESULTS' page is displayed");
-        verifyEquals(ebayHomePage.getHeaderTextsOfResultPage(), "1,400" + "+ results for " + searchData);
-        System.out.println("EBAY RESULTS: " + ebayHomePage.getHeaderTextsOfResultPage());
+        ebayHomePage.getHeaderTextsOfResultPage();
 
-        ExtentTestManager.getTest().log(Status.INFO, "Ebay_02 - Step 05: Select option 'Price: Low to High' from 'Best Match' dropdown");
+        ExtentTestManager.getTest().log(Status.INFO, "Ebay_02 - Step 05: Get and Print out all names of unsorted results");
+        System.out.println("►►►►►►BEFORE SORTING◄◄◄◄◄◄");
+        ebayHomePage.getAllProductNamesPricesLinks();
 
-        ExtentTestManager.getTest().log(Status.INFO, "Ebay_02 - Step 06: Get and Print out all names of sorted items in the result page");
-    }
+        ExtentTestManager.getTest().log(Status.INFO, "Ebay_02 - Step 06: Select option 'Price + Shipping: lowest first' from 'Best Match' dropdown");
+        ebayHomePage.selectOptionFromSortDropdown();
 
-    //@Test
-    public void Testcase_03_Combine_the_output_of_both_websites(Method method) {
-        ExtentTestManager.startTest(method.getName(), "SEARCHING RESULTS COMBINATION");
-
-
+        ExtentTestManager.getTest().log(Status.INFO, "Ebay_02 - Step 07: Get and Print out all names of price-sorted results");
+        System.out.println("►►►►►►AFTER SORTING◄◄◄◄◄◄");
+        ebayHomePage.getAllProductNamesPricesLinks();
     }
 
     @Parameters({"browser"})
