@@ -48,14 +48,19 @@ public class Amazon_Ebay_Test extends BaseTest {
         amazonHomePage.clickOnButtonByID(driver, "nav-search-submit-button");
 
         ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 04: Verify that 'RESULTS' page is displayed");
-        System.out.println("AMAZON RESULTS: " + amazonHomePage.getHeaderTextsOfResultPage());
+        System.out.println("☀ AMAZON RESULT PAGE:" + amazonHomePage.getHeaderTextsOfResultPage());
 
-        ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 05: Select option 'Price: Low to High' from 'Sort By' dropdown");
+        ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 05: Get and Print out all names of unsorted results");
+        System.out.println("►►►►►►BEFORE SORTING◄◄◄◄◄◄");
+        amazonHomePage.getAllProductNamesPricesLinks();
+
+        ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 06: Select option 'Price: Low to High' from 'Sort By' dropdown");
         amazonHomePage.selectOptionFromSortDropdownByID(driver, "s-result-sort-select", "Price: Low to High");
         amazonHomePage.sleepInSecond(3);
 
-        ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 06: Get and Print out all names of sorted items in the result page");
-        amazonHomePage.getAllNamesOfSortedProduct();
+        ExtentTestManager.getTest().log(Status.INFO, "Amazon_01 - Step 07: Get and Print out all names of price-sorted results");
+        System.out.println("►►►►►►AFTER SORTING◄◄◄◄◄◄");
+        amazonHomePage.getAllProductNamesPricesLinks();
 
 
     }

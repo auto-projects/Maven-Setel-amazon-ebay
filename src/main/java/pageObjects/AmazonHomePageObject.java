@@ -15,40 +15,41 @@ public class AmazonHomePageObject extends BasePage {
         this.driver = driver;
     }
 
-    public String getHeaderTextsOfResultPage() {
-        waitForElementVisible(driver, AmazonHomePageUI.HEADER_TEXT_SEARCHING_RESULT_3);
-        return getElementText(driver, AmazonHomePageUI.HEADER_TEXT_SEARCHING_RESULT_3, "value");
-    }
-    public boolean getAllNamesOfSortedProduct() {
-        List<WebElement> nameElements = getListWebElement(driver, AmazonHomePageUI.GET_NAME_LIST);
+    public boolean getAllProductNamesPricesLinks() {
+        List<WebElement> nameElements = getListWebElement(driver, AmazonHomePageUI.UNSORTED_PRODUCT_NAMES);
         List<String> nameValues = new ArrayList<String>();
-        for (WebElement name : nameElements) {
-            nameValues.add(name.getText());
+        for (WebElement product : nameElements) {
+            nameValues.add(product.getText());
+            nameValues.add("\n");
         }
-        System.out.println("►►►Product Name: " + nameValues + "\n");
-
         List<WebElement> priceElements = getListWebElement(driver, AmazonHomePageUI.GET_PRICE_LIST);
         List<String> priceValues = new ArrayList<String>();
         for (WebElement price : priceElements) {
-            nameValues.add(price.getText());
+            priceValues.add(price.getText());
+            priceValues.add("\n");
         }
-        System.out.println("►►►Product Price: " + priceValues + "\n");
-
-        List<WebElement> linkElements = getListWebElement(driver, AmazonHomePageUI.GET_NAME_LIST);
-        List<String> linkValue = new ArrayList<String>();
-
+        List<WebElement> linkElements = getListWebElement(driver, AmazonHomePageUI.GET_LINK_LIST);
+        List<String> linkValues = new ArrayList<String>();
         for (WebElement link : linkElements) {
-            nameValues.add(link.getAttribute("href"));
+            linkValues.add(link.getAttribute("href"));
+            linkValues.add("\n");
         }
-        System.out.println("►►►Product Link: " + linkElements + "\n");
 
-        List<String> nameValuesClone = new ArrayList<String>();
-        nameValuesClone.addAll(nameValues);
-        System.out.println("►►►AMAZON PRODUCTS SORTED BY ASCENDING PRICE:►►►");
-        for (String profileList : nameValuesClone) {
-            System.out.println(profileList);
-        }
-        return nameValues.equals(nameValuesClone);
+        System.out.println("☀ Product Names: "+"\n"+nameValues);
+        System.out.println("☀ Product's Price is: "+"\n"+priceValues);
+        System.out.println("☀ Product's Link is: "+"\n"+linkValues);
+
+    List<String> productNamePriceLinkClone = new ArrayList<String>();
+        productNamePriceLinkClone.add(String.valueOf(nameValues));
+        productNamePriceLinkClone.add(String.valueOf(priceValues));
+        productNamePriceLinkClone.add(String.valueOf(linkValues));
+
+        return nameValues.equals(productNamePriceLinkClone);
+}
+
+    public String getHeaderTextsOfResultPage() {
+        waitForElementVisible(driver, AmazonHomePageUI.HEADER_TEXT_SEARCHING_RESULT_3);
+        return getElementText(driver, AmazonHomePageUI.HEADER_TEXT_SEARCHING_RESULT_3, "value");
     }
 
 }
