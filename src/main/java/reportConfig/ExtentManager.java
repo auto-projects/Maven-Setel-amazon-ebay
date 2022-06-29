@@ -18,8 +18,8 @@ import commons.GlobalConstants;
 
 			extentReports.attachReporter(reporter);
 			extentReports.setSystemInfo("Company", "SETEL");
-			extentReports.setSystemInfo("Project", "SETEL");
-			extentReports.setSystemInfo("Team", "QA Yuna");
+			extentReports.setSystemInfo("Project", "SETEL AMAZON & EBAY");
+			extentReports.setSystemInfo("QA", "Yuna TL");
 			extentReports.setSystemInfo("JDK version", GlobalConstants.JAVA_VERSION);
 			return extentReports;
 		}

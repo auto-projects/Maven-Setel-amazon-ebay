@@ -20,7 +20,6 @@ import org.testng.annotations.BeforeSuite;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -159,11 +158,6 @@ public class BaseTest {
 
     }
 
-    protected int generateFakeNumber() {
-        Random rand = new Random();
-        return rand.nextInt(9999);
-    }
-
     private boolean checkTrue(boolean condition) {
         boolean pass = true;
         try {
@@ -227,7 +221,7 @@ public class BaseTest {
 
     public void deleteReportNGScreenshotsFolder() {
         try {
-            String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/reportNGScreenshots";
+            String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/reportNGImages";
             File file = new File(pathFolderDownload);
             File[] listOfFiles = file.listFiles();
             for (int i = 0; i < listOfFiles.length; i++) {
